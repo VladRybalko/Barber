@@ -1,1 +1,2 @@
 # Barber
+<t,t,t
