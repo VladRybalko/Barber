@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -47,6 +47,7 @@
                 </li>
             </ul>
         </section>
+        <div class="index-columns">
         <section class="news">
             <h2>Новости</h2>
             <ul class="news-list">
@@ -66,9 +67,11 @@
             <figure class="gallery-content">
                 <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
             </figure>
-            <span class="button gallery-button gallery-button-back">Назад</span>
-            <span class="button gallery-button gallery-button-next">Веперд</span>
+            <button class="button gallery-button gallery-button-back">Назад</button>
+            <button class="button gallery-button gallery-button-next">Веперд</button>
         </section>
+      </div>
+      <div class="index-columns">
         <section class="contacts-section">
             <h2>Контактная информация</h2>
             <p>
@@ -87,7 +90,26 @@
         <section class="appointment">
             <h2>Записаться</h2>
             <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p class="appointment-item">
+                  <label class="visually-hidden" for="date-field">Дата</label>
+                  <input class="appointment-date" id="date-field" type="text" name="date" placeholder="18.01.2020">
+              </p>
+              <p class="appointment-item">
+                <label class="visually-hidden" for="time-field">Время</label>
+                <input class="appointment-time" id="time-field" type="text" name="time" placeholder="10:00">
+             </p>
+             <p class="appointment-item">
+              <label class="visually-hidden" for="name-field">Ваше имя</label>
+              <input class="appointment-name" id="name-field" type="text" name="name" placeholder="Борода">
+          </p>
+          <p class="appointment-item">
+            <label class="visually-hidden" for="phone-field">Телефон</label>
+            <input class="appointment-phone" id="phone-field" type="number" name="phone" placeholder="+7 123 456-78-90">
+        </p>
+          </form>
         </section>
+      </div>
     </main>
     <footer class="main-footer">
         <p class="footer-contacts">
@@ -104,7 +126,7 @@
             <li class="social-button"><a href="#">Instagram</a></li>
             </ul>
         </div>
-        <p class="footer-developer">
+        <p class="footer-copyright">
             <b>Разработано:</b>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
