@@ -51,7 +51,7 @@ border: none;
   line-height: 20px;
   color: #ffffff;
 
-  background-color: #000000;
+
 }
 
 .site-navigation,
@@ -355,8 +355,110 @@ color: #000000;
   list-style: none;
 }
 
+/* Для сетки */
 
+.main-header {
+  margin-bottom: 75px;
+  background-color: #000000;
 
+}
 
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
 
+.main-header-logo {
+  display: block;
+  margin: 0 auto;
 
+  width: 368px;
+  height: 153px;
+
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
+
+.features-item {
+  width: 300px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.news {
+  width: 380px;
+}
+
+.gallery {
+  width: 300px;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding: 60px 0;
+}
+
+.footer-contacts {
+  margin: 0;
+  width: 320px;
+  margin-right: 80px;
+}
+
+.footer-social {
+  width: 145px;
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 150px;
+  margin-left: auto;
+}
+
+.main-footer .container {
+  display: flex;
+}
