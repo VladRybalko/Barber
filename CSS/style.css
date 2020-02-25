@@ -327,12 +327,81 @@ text-decoration: underline;
 }
 
 .modal {
+  position: fixed;
+
+
   color: #000000;
 
   background-color: #f7f4f1;
   background-image: url("/Users/vladrybalko/Documents/GitHub/Barber/img/bg/pattern-light.png");
   background-position: 0 0;
   background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7) ;
+}
+
+.modal-login {
+  top: 120px;
+  left: 50%;
+
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+}
+
+.modal-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .modal h2 {
@@ -342,6 +411,11 @@ text-decoration: underline;
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
+box-sizing: border-box;
+width: 300px;
+padding: 10px 15px;
+padding-right: 40px;
+
 font: inherit;
 color: #000000;
 text-transform: uppercase;
@@ -725,7 +799,7 @@ opacity: 0.3;
 
 .contacts p {
   margin: 0;
-  margin-bottom: ;
+  margin-bottom: 30px;
 }
 
 .appointment {
@@ -804,7 +878,8 @@ opacity: 0.3;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  background-color: aquamarine;
+  margin-left: -15px;
+
 }
 
 
