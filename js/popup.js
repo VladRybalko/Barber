@@ -1,4 +1,3 @@
-<script>
 var link = document.querySelector(".login-link");
 
         var popup = document.querySelector(".modal-login");
@@ -57,4 +56,4 @@ var link = document.querySelector(".login-link");
             }
           }
         });
-        </script>
+
