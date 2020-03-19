@@ -428,6 +428,10 @@ text-decoration: underline;
   margin: 0;
 }
 
+.modal-show {
+  display: block;
+}
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
 box-sizing: border-box;
@@ -1346,3 +1350,35 @@ opacity: 0.3;
 .custom-table-1 td:last-child {
   text-align: center;
 }
+
+.inner-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 60px 0;
+}
+
+.inner-columns-left,
+.inner-columns-right {
+  width: 460px;
+}
+
+.inner-columns-left *:first-child,
+.inner-columns-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-columns-left *:last-child,
+.inner-columns-right *:last-child {
+  margin-bottom: 0;
+}
+
+.inner-columns > h2:first-child {
+  width: 460px;
+  margin-top: 0;
+  margin-right: 460px;
+  margin-right: calc(100% - 460px);
+}
+
+.short-text {padding-right: 80px;}
