@@ -120,39 +120,44 @@
       </div>
     </footer>
     <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <button class="modal-close" type="button">
-            Закрыть
-        </button>
-      </section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.324718%2C59.938483&utm_medium=mapframe&utm_source=maps&z=16.69" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKqg5Jm1" width="766" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
-      <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-            </p>
-            <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-icon-user" id="user-password" type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="login-password-info">
-                <label class="login-checkbox">
-                    <input type="checkbox" name="remember">
-                    Запомните меня
-                </label>
-                <a class="restore" href="#">Я забыл пароль!</a>
-            </p>
-            <button class="button" type="button">
-                Войти
-            </button>
-        </form>
-        <button class="modal-close" type="button">
-            Закрыть
-        </button>
-      </section>
+
+      <button class="modal-close" type="button">
+          Закрыть
+      </button>
+    </section>
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p class="modal-description">Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p class="login-help">
+              <label class="login-checkbox">
+                  <input type="checkbox" name="remember" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Запомните меня
+              </label>
+              <a class="restore" href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button" type="button">
+              Войти
+          </button>
+      </form>
+      <button class="modal-close" type="button">
+          Закрыть
+      </button>
+    </section>
+    <script src="js/popup.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
